@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="day">
+
+  <div class="container">
+    <h1>Weather App</h1>
+
+    <button id="theme-toggle">Switch to Night Mode</button>
+
+    <form id="weather-form">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button type="submit">Get Weather</button>
+    </form>
+
+    <p id="loading"></p>
+    <p id="error" class="error"></p>
+
+    <div id="weather-result"></div>
+  </div>
+
+  <footer>
+    Data from OpenWeather API
+  </footer>
+
+  <!-- IMPORTANT -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

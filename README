@@ -1,0 +1,14 @@
+# WEATHER APP
+
+## Project Description
+
+This website is a weather application that provides current weather information and forecast data for any city worldwide. Users can enter a city name in the search field, and the application will fetch and display the current temperature, weather conditions, humidity, and weather icons. The application also shows a multi-day forecast with temperature predictions. The website features a day and night mode theme toggle that allows users to switch between light and dark color schemes for better viewing experience. The application is fully responsive and works on all screen sizes including mobile devices. The weather data is fetched from the OpenWeather API and displayed in an organized and user-friendly interface.
+
+## API Details Used
+
+The application uses the OpenWeather API which is a weather data service that provides current weather conditions and forecasts. The API requires an API key for authentication which is stored in the config.js file. The application makes two API calls: one to get current weather data from the endpoint https://api.openweathermap.org/data/2.5/weather and another to get forecast data from https://api.openweathermap.org/data/2.5/forecast. Both requests use the GET method and require the city name as a query parameter along with the API key. The API returns data in JSON format including temperature in Celsius, humidity percentage, weather descriptions, and weather icons. The API key must be obtained from OpenWeather's website by creating a free account.
+
+## Instructions to Run the Project
+
+To run this project, you need a local web server since the application uses ES6 modules. If you are using XAMPP, place the Weather folder inside the htdocs directory. Start the XAMPP Apache server, then open your web browser and navigate to the appropriate URL based on your folder structure, for example http://localhost/Weather/index.html or http://localhost/your-folder-name/Weather/index.html depending on where you placed the folder. Alternatively, you can use any other local web server like Python's http.server, Node.js http-server, or any other web server of your choice. Simply navigate to the Weather folder directory and start the server, then access the index.html file through the server URL. The website will load and you can start searching for weather information by entering a city name. Make sure you have an active internet connection as the application needs to fetch data from the OpenWeather API. The API key is already configured in the config.js file, so no additional setup is required.
+

@@ -1,0 +1,113 @@
+/* ===== GLOBAL STYLES ===== */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* ===== DAY MODE ===== */
+body.day {
+  background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+  color: #222;
+}
+
+/* ===== NIGHT MODE ===== */
+body.night {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: #f0f0f0;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== INPUT & BUTTON ===== */
+input, button {
+  padding: 12px 15px;
+  margin: 5px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+}
+
+input {
+  width: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.15);
+  color: inherit;
+  transition: background 0.3s;
+}
+
+input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: #6a5acd;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #7b6cff;
+  transform: scale(1.05);
+}
+
+/* ===== WEATHER CARD ===== */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+}
+
+/* ===== FORECAST GRID ===== */
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.forecast-card {
+  background: rgba(255,255,255,0.1);
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.forecast-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+/* ===== ERROR MESSAGE ===== */
+.error {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85em;
+  color: #888;
+}
